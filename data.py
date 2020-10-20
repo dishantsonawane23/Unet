@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 
 def load_data(path, split=0.1):
     images = sorted(glob(os.path.join(path, "images/*")))
-    masks = sorted(glob(os.path.join(path, "masks/*")))
+    masks = sorted(glob(os.path.join(path, "HardExudates/*")))
     print(images)
     print(masks)
     total_size = len(images)
